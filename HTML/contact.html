@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Pack | Contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-[#FAFAFA]">
+<nav>
+    <!-- Top Contact Bar (only desktop) -->
+    <div class="hidden lg:flex justify-between pl-[5%] pr-[5%] pt-[2%]">
+      <aside class="text-[#171717] font-poppins text-[13px] font-normal leading-[140%]">
+        Sample@gmail.com / +043 89 76 4576
+      </aside>
+      <aside class="text-[#171717] font-poppins text-[13px] not-italic font-normal leading-[150%]">OPEN FROM 9AM TO 5PM - CLOSED ON WEEKENDS</aside>
+    </div>
+
+    <hr class="hidden lg:flex bg-[#262626] opacity-40 ml-[5%] mr-[5%]">
+
+    <!-- Navbar -->
+    <div class="flex justify-between items-center border-b p-2 border-black/10 bg-[#FAFAFA] lg:border-b-0 pl-[5%] pr-[5%] relative">
+      <!-- Logo -->
+      <img src="/IMAGES/Surgical Packs.png" alt="Company-logo" class="w-[114px] h-[46px]">
+
+      <div class="lg:flex gap-10 hidden ">
+         <a href="home.html" class="text-[#171717] font-poppins text-[16px] font-normal">Home</a>
+        <a href="about.html" class="text-[#171717] font-poppins text-[16px] font-normal">About Us</a>
+        <a href="products.html" class="text-[#171717] font-poppins text-[16px] font-normal">Product</a>
+        <a href="contact.html" class="text-[#171717] font-poppins text-[16px] font-normal">Contact Us</a>
+      </div>
+      <!-- Links + Shop Button + Socials (Mobile Dropdown) -->
+      <div id="mobileMenu"
+        class="hidden flex-col lg:flex lg:flex-row justify-center items-center bg-[#FAFAFA] lg:bg-transparent absolute lg:static top-full left-0 w-full lg:w-auto gap-6 lg:gap-10 shadow-md lg:shadow-none p-5 lg:p-0 z-50">
+        
+        <!-- Nav Links -->
+        <a href="home.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Home</a>
+        <a href="about.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">About Us</a>
+        <a href="products.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Product</a>
+        <a href="contact.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Contact Us</a>
+
+        <!-- Shop Now (always in nav, but styled for both screens) -->
+        <button
+          class="flex items-center gap-2 bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium px-6 py-2 rounded-[8px] w-[168px] h-[48px]">
+          <span>Shop Now</span>
+          <img src="/IMAGES/shop-arrow.png" alt="">
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="lg:hidden">
+        <img src="/IMAGES/Menu.png" alt="Menu" class="w-[40px] h-[40px]">
+      </button>
+    </div>
+</nav>
+
+<header class="ml-[5%] mr-[5%] mt-[1%]">
+    <img src="/IMAGES/contact.png" alt="contact" class="h-[100px] sm:h-auto">
+    <div class="flex flex-col items-center mt-20 mb-15">
+        <h1 class="text-[#0B0B0B] text-center font-nohemi text-[35px] sm:text-[48px] not-italic font-normal leading-normal items-center">Get in touch With Us!</h1>
+        <p class="sm:w-[559px] w-auto text-[#0B0B0B] text-center font-poppins text-[16px] not-italic font-normal leading-[24px] items-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+    </div>
+</header>
+
+<main>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.080517002716!2d73.11454567479421!3d33.62915423995364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfeb4062e2adc1%3A0x96151197c48f4f32!2sSafeCare%20Training%20%26%20Services!5e0!3m2!1sen!2s!4v1756901321255!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-[100%] md:h-[600px] h-[400px]"></iframe>
+  <div class="flex flex-col lg:flex-row px-[5%] lg:-mt-[100px] mb-[5%]">
+    <div class="bg-white flex flex-col p-6 md:p-10 w-full lg:w-1/2">
+      <h3 class="text-black font-nohemi text-[24px] md:text-[32px] font-normal leading-normal">
+        Write a Message
+      </h3>
+      <p class="max-w-[460px] text-black font-poppins text-[14px] md:text-[16px] font-normal leading-[24px] mt-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      </p>
+
+      <form action="" class="flex flex-col gap-5 mt-5 w-full">
+        <input type="text" placeholder="Name"
+          class="h-[42px] border-b border-white/50 bg-[#FAFAFA] w-full max-w-[600px] px-3">
+        <input type="text" placeholder="Email"
+          class="h-[42px] border-b border-white/50 bg-[#FAFAFA] w-full max-w-[600px] px-3">
+        <textarea rows="5"
+          class="border-b border-white/50 bg-[#FAFAFA] w-full max-w-[600px] p-3" placeholder="Message"></textarea>
+      </form>
+    </div>
+    <div class="bg-gradient-to-r from-[#1B7F75] to-[#4EA291] p-6 md:p-10 flex flex-col gap-5 w-full lg:w-1/2">
+      <h3 class="text-white font-nohemi text-[24px] md:text-[32px] font-normal leading-normal">
+        Contact Information
+      </h3>
+      <p class="text-white font-poppins text-[14px] md:text-[16px] font-normal leading-normal">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      </p>
+      <div class="flex gap-4 md:gap-7">
+        <div class="bg-white rounded-full w-[38px] h-[38px] flex items-center justify-center">
+          <img src="/IMAGES/call.png" alt="call" class="w-[18px] h-[18px] object-contain">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-white font-nohemi text-[14px] md:text-[16px] font-normal leading-[110%] uppercase">Phone</span>
+          <span class="text-white font-poppins text-[14px] md:text-[16px] font-normal leading-[110%] mt-1">0341-83468643</span>
+          <span class="text-white font-poppins text-[14px] md:text-[16px] font-normal leading-[110%]">0348-37534734</span>
+        </div>
+      </div>
+      <div class="flex gap-4 md:gap-7">
+        <div class="bg-white rounded-full w-[38px] h-[38px] flex items-center justify-center">
+          <img src="/IMAGES/mail.png" alt="mail" class="w-[18px] h-[18px] object-contain">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-white font-nohemi text-[14px] md:text-[16px] font-normal leading-[110%] uppercase">Email</span>
+          <span class="text-white font-poppins text-[14px] md:text-[16px] font-normal leading-[110%] mt-1">user@gmail.com</span>
+          <span class="text-white font-poppins text-[14px] md:text-[16px] font-normal leading-[110%]">user@gmail.com</span>
+        </div>
+      </div>
+      <div class="flex flex-row  gap-4 md:gap-7">
+        <div class="bg-white rounded-full w-[38px] h-[38px] flex items-center justify-center">
+         <img src="/IMAGES/location.png" alt="location" class="w-[18px] h-[18px] object-contain">
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span class="text-white font-nohemi text-[14px] md:text-[16px] font-normal leading-[110%] uppercase">Location</span>
+          <span class="w-[150px] text-white font-poppins text-[14px] md:text-[16px] font-normal leading-[110%] mt-1">121th Haidezign st, Melbourne, AUS 12313</span>
+        </div>
+      </div>
+      <p class="text-white font-nohemi text-[18px] md:text-[20px] font-normal leading-normal mt-4">Social Media</p>
+      <div class="flex gap-2">
+        <div class="bg-white rounded-full w-[38px] h-[38px] flex items-center justify-center"><img src="/IMAGES/ft-fb.png" alt="" class="w-[18px] h-[18px] object-contain"></div>
+        <div class="bg-white rounded-full w-[38px] h-[38px] flex items-center justify-center"><img src="/IMAGES/ft-twitter.png" alt="" class="w-[18px] h-[18px] object-contain"></div>
+        <div class="bg-white rounded-full w-[38px] h-[38px] flex items-center justify-center"><img src="/IMAGES/ft-insta.png" alt="" class="w-[18px] h-[18px] object-contain"></div>
+        <div class="bg-white rounded-full w-[38px] h-[38px] flex items-center justify-center"><img src="/IMAGES/ft-yt.png" alt="" class="w-[18px] h-[18px] object-contain"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-[#FAFAFA] mt-[5%]">
+  <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 pt-20 pb-15 justify-between pl-[5%] pr-[5%]">
+    <div class="flex flex-col gap-4">
+      <img src="/IMAGES/Surgical Packs.png" alt="Surgical Packs" class="w-[124px] h-[50px]">
+      <p class="sm:w-[407px] text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-[29px]">Safecare Prepared plates and broth tested  in accordance with CLSI M22 A3- Quality  assurance for Commercially Prepared  Microbiological Culture Media – second  edition.</p>
+      <div class="flex gap-2">
+         <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/fb2.png" alt="Facebook"></div>
+         <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/twitter2.png" alt="twitter"></div>
+        <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/insta2.png" alt="Instagram"></div>
+        <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/Youtube2.png" alt="Youtube"></div>      
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <h2 class="text-[#1E1E1E] font-nohemi text-[20px] font-medium leading-normal not-italic">Quick Links</h2>
+      <a href="home.html" class="mt-3 text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Home</a>
+      <a href="about.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">About Us</a>
+      <a href="products.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Products</a>
+      <a href="contact.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Contact Us</a>
+    </div>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-[#1E1E1E] font-nohemi text-[20px] font-medium leading-normal not-italic">News Letter</h2>
+      <p class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Over 750+ people have subscribed.</p>
+      <div class="flex gap-2">
+        <input type="text"  class="flex  w-[180px] sm:w-[280px] px-[22px] py-[14px] items-start gap-[10px] bg-white shadow-[0_0_4px_rgba(0,0,0,0.15)] " placeholder="Enter Your Email">
+        <button class="w-[100px] sm:w-[110px] h-[49px] flex-shrink-0 bg-gradient-to-r from-[#1B7F75] to-[#4EA291]">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <hr class="text-[#D4D4D4]">
+  <aside class="text-[#9F9F9F] font-poppins text-[14px] sm:text-[16px] not-italic font-normal leading-normal text-center pt-2 pb-2">Copyright 2024 Microbiano Ltd | All Rights Reserved</aside>  
+</footer>
+
+<script src="/JAVASCRIPT/INDEX.JS"></script>
+
+</body>
+</html>

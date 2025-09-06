@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sential Pack | Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+<nav>
+    <!-- Top Contact Bar (only desktop) -->
+    <div class="hidden lg:flex justify-between pl-[5%] pr-[5%] pt-[2%]">
+      <aside class="text-[#171717] font-poppins text-[13px] font-normal leading-[140%]">
+        Sample@gmail.com / +043 89 76 4576
+      </aside>
+      <div class="flex gap-3">
+        <a href="#"><img src="/IMAGES/fb.png" alt="Facebook" class="w-[20px] h-[20px]"></a>
+        <a href="#"><img src="/IMAGES/twitter.png" alt="Twitter" class="w-[20px] h-[20px]"></a>
+        <a href="#"><img src="/IMAGES/Instagram.png" alt="Instagram" class="w-[20px] h-[20px]"></a>
+        <a href="#"><img src="/IMAGES/Youtube.png" alt="Youtube" class="w-[20px] h-[20px]"></a>
+      </div>
+    </div>
+
+    <hr class="hidden lg:flex bg-[#262626] opacity-40 ml-[5%] mr-[5%]">
+
+    <!-- Navbar -->
+    <div class="flex justify-between items-center border-b p-2 border-black/10 lg:border-b-0 pl-[5%] pr-[5%] relative">
+      <!-- Logo -->
+      <img src="/IMAGES/Surgical Packs.png" alt="Company-logo" class="w-[114px] h-[46px]">
+
+
+      <div class="lg:flex gap-10 hidden ">
+         <a href="home.html" class="text-[#171717] font-poppins text-[16px] font-normal">Home</a>
+        <a href="about.html" class="text-[#171717] font-poppins text-[16px] font-normal">About Us</a>
+        <a href="products.html" class="text-[#171717] font-poppins text-[16px] font-normal">Product</a>
+        <a href="contact.html" class="text-[#171717] font-poppins text-[16px] font-normal">Contact Us</a>
+      </div>
+      <!-- Links + Shop Button + Socials (Mobile Dropdown) -->
+      <div id="mobileMenu"
+        class="hidden flex-col lg:flex lg:flex-row justify-center items-center bg-white lg:bg-transparent absolute lg:static top-full left-0 w-full lg:w-auto gap-6 lg:gap-10 shadow-md lg:shadow-none p-5 lg:p-0 z-50">
+        
+        <!-- Nav Links -->
+        <a href="home.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Home</a>
+        <a href="about.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">About Us</a>
+        <a href="products.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Product</a>
+        <a href="contact.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Contact Us</a>
+
+        <!-- Shop Now (always in nav, but styled for both screens) -->
+        <button
+          class="flex items-center gap-2 bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium px-6 py-2 rounded-[8px] w-[168px] h-[48px]">
+          <span>Shop Now</span>
+          <img src="/IMAGES/shop-arrow.png" alt="">
+        </button>
+
+        <!-- Social Media (mobile only here, desktop upar hoga) -->
+        <div class="flex gap-3 lg:hidden mt-3">
+          <a href="#"><img src="/IMAGES/fb.png" alt="Facebook" class="w-[24px] h-[24px]"></a>
+          <a href="#"><img src="/IMAGES/twitter.png" alt="Twitter" class="w-[24px] h-[24px]"></a>
+          <a href="#"><img src="/IMAGES/Instagram.png" alt="Instagram" class="w-[24px] h-[24px]"></a>
+          <a href="#"><img src="/IMAGES/Youtube.png" alt="Youtube" class="w-[24px] h-[24px]"></a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="lg:hidden">
+        <img src="/IMAGES/Menu.png" alt="Menu" class="w-[40px] h-[40px]">
+      </button>
+    </div>
+</nav>
+
+<header class="relative ml-[5%] mr-[5%] mt-[1%]">
+  <!-- Slider main container -->
+  <div class="swiper first-swiper relative h-[500px] md:h-[600px]">
+    <div class="swiper-wrapper first-wrapper">
+      <div class="swiper-slide first-slide1 relative">
+        <img src="/IMAGES/surgeons.png" alt="surgeons" class="w-full sm:h-full h-[54%] mt-[125px] sm:mt-0  object-cover">
+      </div>
+      <div class="swiper-slide first-slide2 relative">
+        <img src="/IMAGES/surgeons.png" alt="surgical packs" class="w-full sm:h-full h-[54%] mt-[125px] sm:mt-0 object-cover">
+      </div>
+      <div class="swiper-slide first-slide3  relative">
+        <img src="/IMAGES/surgeons.png" alt="surgeons" class="w-full sm:h-full h-[54%] mt-[125px] sm:mt-0 object-cover ">
+      </div>
+    </div>
+    <!-- Swiper pagination + nav -->
+    <div class="swiper-pagination first-pagination !absolute !top-[80%] 
+     sm:!top-[90%]"></div>
+     <!-- Custom Prev Button -->
+<div class="custom-prev custom-prev1 absolute top-1/2 left-4 -translate-y-1/2 z-50 cursor-pointer">
+  <img src="/IMAGES/left-arrow.png" alt="Prev" class="w-[48px] h-[48px]">
+</div>
+<!-- Custom Next Button -->
+<div class="custom-next custom-next1 absolute top-1/2 right-4 -translate-y-1/2 z-50 cursor-pointer">
+  <img src="/IMAGES/right-arrow.png" alt="Next" class="w-[48px] h-[48px]">
+</div>
+
+
+    <!-- Text overlay -->
+    <div class="top-[-75%] sm:top-0 z-50 absolute inset-0 flex flex-col gap-2 justify-center items-center md:items-start md:ml-[60px] pointer-events-none">
+  <h2 class="font-nohemi text-[28px] sm:text-[30px] md:text-[40px] font-normal leading-[117%] text-[#1B7F75] text-center md:text-left">
+    Supporting Surgeons, <br>Saving Lives
+  </h2>
+
+  <!-- Button ko swipe ke upar bhi clickable rakhne ke liye pointer-events-auto -->
+  <button class="pointer-events-auto flex items-center gap-2 cursor-pointer bg-[linear-gradient(90deg,#4EA291_0%,#4EA291_100%)] text-white font-poppins font-medium px-6 py-2 rounded-[8px] md:rounded-[0px]">
+    <span class="text-[14px]">Get this from Jurhy</span>
+    <img src="/IMAGES/shop-arrow.png" alt="" class="w-[16px] h-[16px]">
+  </button>
+</div>
+  </div>
+</header>
+
+<main>
+<section class="pl-[5%] pr-[5%] mt-[8%]">
+  <div class="swiper second-swiper productSwiper">
+    <!-- Wrapper -->
+    <div class="swiper-wrapper second-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack1.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack3.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack4.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+      <!-- Slide 5 -->
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack5.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack5.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack5.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="px-[17px] py-[20px] flex justify-center items-center border border-black/10 bg-white">
+          <img src="/IMAGES/cleaning-pack5.png" alt="" class="w-[147px] h-[147px]">
+        </div>
+        <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal text-center">
+          Vulval Toilet Cleaning Pack
+        </p>
+      </div>
+    </div>
+
+    <div class="custom-prev custom-prev2 absolute top-1/2 -translate-y-1/2 left-0 z-60 top-[40%] cursor-pointer">
+        <img src="/IMAGES/left-arrow.png" alt="" class="w-[48px] h-[48px]">
+    </div>
+    <div class="custom-next custom-next2 absolute top-1/2 -translate-y-1/2 right-0 z-60 top-[40%] cursor-pointer">
+      <img src="/IMAGES/right-arrow.png" alt="" class="w-[48px] h-[48px]">
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination product-pagination !relative !mt-6"></div>
+  </div>
+</section>
+ 
+<section class="lg:pl-[11%] lg:pr-[11%] pl-[5%] pr-[5%] flex flex-col-reverse lg:flex-row gap-5 lg:gap-15 mt-[10%] mb-[10%] items-center">
+  <img src="/IMAGES/company.png" alt="Company" class="lg:w-[454px] w-[100%]  sm:w-[60%] ">
+  
+  <div class="flex flex-col gap-3 ">
+    <h3 class="text-[#0F0F0F] font-nohemi text-[26px] sm:text-[40px] not-italic font-normal leading-normal text-left">
+      About Company
+    </h3>
+    <p class="text-[#0F0F0F] font-poppins text-[15px] sm:text-[16px] not-italic font-normal leading-normal text-left">
+      Safecare Medical Industries Was Conceived And Established In The Year Of 2016 By Bin Ali Group that plans to give a different dimension to the medical industries all across the Middle East. Headquartered in Abu Dhabi, UAE, SafeCare is a domestic profit corporation providing quality medical plastic consumable products across all GCC countries. With its registered subsidiary factories and subsidiary offices across the UK, USA, Germany, and China, SafeCare thrives on producing and providing quality medical products across the globe.
+    </p>
+    <button class="flex items-center gap-2 bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium px-6 sm:py-2 w-[174px] sm:h-[48px] h-[42px] mt- lg:mt-0 ">
+      <span>Learn More</span>
+      <img src="/IMAGES/shop-arrow.png" alt="learn-arrow">
+    </button>
+  </div>
+</section>
+
+<section class="pl-[5%] pr-[5%] flex flex-col gap-5 bg-[#FAFAFA] pt-[10%] pb-[10%]">
+  <div class="flex sm:justify-between flex-col sm:flex-row">
+    <h4 class="self-center text-[#0F0F0F] font-nohemi text-[26px] sm:text-[40px] sm:text-[40px] not-italic font-normal leading-normal">Our Products</h4>
+    <button class="self-center sm:self-normal w-[116px] h-[48px] bg-gradient-to-r from-[#1B7F75] to-[#4EA291] text-white font-poppins font-medium" id="view">View All</button>
+    <button class="hidden self-center sm:self-normal w-[116px] h-[48px] bg-gradient-to-r from-[#1B7F75] to-[#4EA291] text-white font-poppins font-medium" id="view-less">View Less</button>
+  </div>
+  <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-1 flex">
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="  pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product1.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product2.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product3.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product4.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="preview hidden sm:flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product5.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="preview hidden md:flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product6.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="preview hidden md:flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product7.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="preview hidden md:flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product8.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="preview hidden md:flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product9.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="preview hidden sm:flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product10.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section class="mt-[8%] mb-[8%] lg:pl-[11%] pl-[5%] pr-[5%] gap-5 flex flex-col lg:flex-row items-center">
+    <h6  class="lg:hidden text-[#0F0F0F] font-nohemi  text-[23px] not-italic font-medium lg:font-normal leading-normal">Product Overview</h6>
+  <img src="/IMAGES/intravertial-kit.png" alt="" class="lg:w-[413px] lg:h-[485px] lg:shadow-none bg-white shadow-[0_4px_36px_0_rgba(0,0,0,0.06)]">
+  <div class="flex flex-col gap-1">
+    <h6  class="hidden lg:flex text-[#0F0F0F] font-nohemi  sm:text-[20px] not-italic font-medium lg:font-normal leading-normal">Product Overview</h6>
+    <h4  class="text-[#0F0F0F] font-nohemi text-[28px] sm:text-[40px] not-italic font-normal leading-normal">Intravitreal Kit</h4>
+    <p class="text-[#0F0F0F] font-poppins text-[14px] sm:text-[16px] not-italic font-normal leading-normal">Safecare Medical Industries Was Conceived And Established In The Year Of 2016 By Bin Ali Group That Plans To Give A Different Dimension To The Medical Industries All Across The Middle East.Headquartered in Abu Dhabi, UAE, SafeCare is a domestic profit corporation providing quality medical plastic consumable products across all GCC countries. </p>
+    <button class="flex items-center gap-2 bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium px-6 sm:py-2 w-[174px] sm:h-[45px] h-[40px] mt-4 lg:mt-7 ">
+      <span>Learn More</span>
+      <img src="/IMAGES/shop-arrow.png" alt="learn-arrow">
+    </button>
+  </div>
+  <img src="/IMAGES/g-right-arrow.png" alt="right-arrow" class="hidden lg:flex w-[48px] h-[48px] pl-[5%] pr-[5%]">  
+</section>
+
+<section class="ml-[5%] mr-[5%] h-[400px] bg-[url('/IMAGES/res-off.png')] sm:bg-[url('/IMAGES/off.png')] bg-cover bg-center flex justify-center md:block">
+  
+  <div class="ml-[5%] sm:justify-center  sm:max-w-[540px] text-white sm:text-left sm:float-right sm:relative sm:right-10 sm:mt-25">
+      <h3 class="text-[28px] sm:text-[36px] lg:text-[48px] leading-tight font-nohemi font-normal">
+        Enjoy up to 10% off!
+      </h3>
+      <p class="mt-3 text-[14px] sm:text-[15px] lg:text-[16px] leading-[22px] md:leading-[24px] font-nohemi w-[270px] sm:w-auto">
+        Grab your limited-time discount and enjoy 10% off on all our products
+      </p>
+
+      <button
+        class="mt-6 inline-flex items-center gap-2 bg-white text-[#479D8D] font-poppins font-medium px-6 h-[48px] rounded-[8px]"
+      >
+        <span>Get this from Jurhy</span>
+        <img src="/IMAGES/g-arrow.png" alt="arrow" class="h-5 w-5">
+      </button>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="bg-[#FAFAFA] pt-[5%]">
+  <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 pt-20 pb-15 justify-between pl-[5%] pr-[5%]">
+    <div class="flex flex-col gap-4">
+      <img src="/IMAGES/Surgical Packs.png" alt="Surgical Packs" class="w-[124px] h-[50px]">
+      <p class="sm:w-[407px] text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-[29px]">Safecare Prepared plates and broth tested  in accordance with CLSI M22 A3- Quality  assurance for Commercially Prepared  Microbiological Culture Media – second  edition.</p>
+      <div class="flex gap-2">
+         <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/fb2.png" alt="Facebook"></div>
+         <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/twitter2.png" alt="twitter"></div>
+        <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/insta2.png" alt="Instagram"></div>
+        <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/Youtube2.png" alt="Youtube"></div>      
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <h2 class="text-[#1E1E1E] font-nohemi text-[20px] font-medium leading-normal not-italic">Quick Links</h2>
+      <a href="home.html" class="mt-3 text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Home</a>
+      <a href="about.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">About Us</a>
+      <a href="products.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Products</a>
+      <a href="contact.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Contact Us</a>
+    </div>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-[#1E1E1E] font-nohemi text-[20px] font-medium leading-normal not-italic">News Letter</h2>
+      <p class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Over 750+ people have subscribed.</p>
+      <div class="flex gap-2">
+        <input type="text"  class="flex  w-[180px] sm:w-[280px] px-[22px] py-[14px] items-start gap-[10px] bg-white shadow-[0_0_4px_rgba(0,0,0,0.15)] " placeholder="Enter Your Email">
+        <button class="w-[100px] sm:w-[110px] h-[49px] flex-shrink-0 bg-gradient-to-r from-[#1B7F75] to-[#4EA291]">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <hr class="text-[#D4D4D4]">
+  <aside class="text-[#9F9F9F] font-poppins text-[14px] sm:text-[16px] not-italic font-normal leading-normal text-center pt-2 pb-2">Copyright 2024 Microbiano Ltd | All Rights Reserved</aside>  
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/JAVASCRIPT/home.js"></script>
+
+<!-- <script>
+  document.getElementById('view').addEventListener('click', function () {
+    const previews = document.querySelectorAll('.preview');
+    previews.forEach(preview => {
+      preview.classList.remove('hidden'); // show previews
+      preview.classList.add('flex');
+    });
+    this.style.display = 'none'; // hide "View More"
+    document.getElementById('view-less').style.display = 'inline-block';
+  });
+
+  document.getElementById('view-less').addEventListener('click', function (){
+    const previews = document.querySelectorAll('.preview');
+    previews.forEach(preview => {
+      preview.classList.add('hidden');
+      preview.classList.remove('flex');
+    });
+    this.style.display = 'none';
+    document.getElementById('view').style.display = 'inline-block';
+  });
+  const swiper = new Swiper('.first-swiper', {
+  loop: true,
+  pagination: {
+    el: '.first-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.custom-next1',
+    prevEl: '.custom-prev1',
+  },
+});
+
+  var secondSwiper = new Swiper(".second-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true, 
+
+    navigation: {
+      nextEl: ".custom-next2",
+      prevEl: ".custom-prev2",
+    },
+    pagination: {
+      el: ".product-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 5 },
+    },
+     keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  mousewheel: {
+    invert: true,
+  },
+  
+  });
+</script> -->
+</body>
+</html>

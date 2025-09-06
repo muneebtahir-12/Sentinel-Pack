@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+<body class="bg-[#FAFAFA]">
+<nav>
+    <!-- Top Contact Bar (only desktop) -->
+    <div class="hidden lg:flex justify-between pl-[5%] pr-[5%] pt-[2%]">
+      <aside class="text-[#171717] font-poppins text-[13px] font-normal leading-[140%]">
+        Sample@gmail.com / +043 89 76 4576
+      </aside>
+       <aside class="text-[#171717] font-poppins text-[13px] not-italic font-normal leading-[150%]">OPEN FROM 9AM TO 5PM - CLOSED ON WEEKENDS</aside>
+    </div>
+
+    </div>
+
+    <hr class="hidden lg:flex bg-[#262626] opacity-40 ml-[5%] mr-[5%]">
+
+    <!-- Navbar -->
+    <div class="flex justify-between items-center border-b p-2 border-black/10 bg-[#FAFAFA] lg:border-b-0 pl-[5%] pr-[5%] relative">
+      <!-- Logo -->
+      <img src="/IMAGES/Surgical Packs.png" alt="Company-logo" class="w-[114px] h-[46px]">
+
+      <div class="lg:flex gap-10 hidden ">
+         <a href="home.html" class="text-[#171717] font-poppins text-[16px] font-normal">Home</a>
+        <a href="about.html" class="text-[#171717] font-poppins text-[16px] font-normal">About Us</a>
+        <a href="products.html" class="text-[#171717] font-poppins text-[16px] font-normal">Product</a>
+        <a href="contact.html" class="text-[#171717] font-poppins text-[16px] font-normal">Contact Us</a>
+      </div>
+      <!-- Links + Shop Button + Socials (Mobile Dropdown) -->
+      <div id="mobileMenu"
+        class="hidden flex-col lg:flex  lg:flex-row justify-center items-center bg-[#FAFAFA] lg:bg-transparent absolute lg:static top-full left-0 w-full lg:w-auto gap-6 lg:gap-10 shadow-md lg:shadow-none p-5 lg:p-0 z-50">
+        
+        <!-- Nav Links -->
+        <a href="home.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Home</a>
+        <a href="about.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">About Us</a>
+        <a href="products.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Product</a>
+        <a href="contact.html" class="text-[#171717] font-poppins text-[16px] font-normal lg:hidden">Contact Us</a>
+        <!-- Shop Now (always in nav, but styled for both screens) -->
+        <button
+          class="flex items-center gap-2 bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium px-6 py-2 rounded-[8px] w-[168px] h-[48px]">
+          <span>Shop Now</span>
+          <img src="/IMAGES/shop-arrow.png" alt="">
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="lg:hidden">
+        <img src="/IMAGES/Menu.png" alt="Menu" class="w-[40px] h-[40px]">
+      </button>
+    </div>
+</nav>
+ 
+<header class="flex flex-col mt-[5%] ml-[5%] mr-[5%] gap-10">
+  <div class="h-[350px] bg-[url('/IMAGES/product-page.png')] bg-cover bg-center flex items-center">
+    <div class="flex flex-col gap-2 sm:ml-10 ml-7 mr-5">
+    <h2 class="text-white font-nohemi text-[40px] not-italic font-normal leading-normal">Our Products</h2>
+    <p class="text-white font-poppins text-[16px] not-italic font-normal leading-[150%] sm:w-[411px] w-auto">Grab your limited-time discount and enjoy 10% off on all our products</p>
+  </div>
+  </div>
+  <div class="hidden md:flex justify-between items-center">
+    <div  class="flex gap-2">
+        <img src="/IMAGES/back.png" alt="back" class="w-[25px] h-[25px]">
+        <span class="font-poppins text-[17px] not-italic font-medium leading-[150%]">Back</span>
+    </div>
+    <input type="text" placeholder="     Search.." class="bg-white shadow w-[400px] h-[56px] shrink-0">
+  </div>
+</header>
+
+<main>
+<section class="pl-[5%] pr-[5%] flex flex-col lg:flex-row justify-between gap-10 mt-[8%] mb-[8%] ">
+  <div class="bg-white p-5 flex flex-col items-center lg:w-1/2">
+    <div class="self-center">
+      <img src="/IMAGES/product.png" alt="Product" class="lg:w-[418px] lg:h-[297px] object-cover rounded-md shadow" />
+    </div>
+    <div class="flex items-center gap-2 mt-4">
+      <img src="/IMAGES/left-arrow.png" alt="Left" class="w-[40px] h-[40px] cursor-pointer" />
+
+      <div class="flex gap-2">
+        <div class="bg-white sm:p-1">
+          <img src="/IMAGES/Dressing kit.png" alt="" class="w-[78px] h-[55px] sm:h-[67px] object-cover" />
+        </div>
+        <div class="bg-[#ACACAC4D] sm:p-1">
+          <img src="/IMAGES/Dressing kit.png" alt="" class="w-[78px] h-[55px] sm:h-[67px] object-cover" />
+        </div>
+        <div class="bg-[#ACACAC4D] sm:p-1">
+          <img src="/IMAGES/Dressing kit.png" alt="" class="w-[78px] h-[55px] sm:h-[67px] object-cover" />
+        </div>
+        <div class="bg-[#ACACAC4D]  sm:p-1">
+          <img src="/IMAGES/Dressing kit.png" alt="" class="w-[78px] h-[55px] sm:h-[67px] object-cover" />
+        </div>
+      </div>
+
+      <img src="/IMAGES/right-arrow.png" alt="Right" class="w-[40px] h-[40px] cursor-pointer" />
+    </div>
+  </div>
+  <div class="flex flex-col gap-6 lg:w-1/2">
+    <h4 class="text-2xl font-semibold">Vulval Toilet Cleaning Pack</h4>
+    <p class="text-[#716B66] font-poppins">
+      <span class="font-medium text-[#ADADAD] font-poppins">Max Cut Skin Barrier Dia:</span> 15-35mm / 87mm
+    </p>
+    <p class="text-[#716B66] font-poppins">
+      <span class="font-medium text-[#ADADAD] font-poppins">Remark:</span> With 2 piece for option
+    </p>
+    <p class="text-[#716B66] font-poppins text-[16px] leading-relaxed ">
+      Alkaline peptone water is generally used as an enrichment medium in the isolation of Vibriospp. from faeces. This medium may also be used for the enrichment of Vibrio spp. from food and water samples.
+    </p>
+    <div class="flex gap-10">
+      <p class="text-[#716B66] font-normal"><span class="font-medium text-[#716B66]">Availability:</span> 100 in stock</p>
+      <p class="text-[#716B66] font-normal"><span class="font-medium text-[#716B66]">SKU:</span> ILMPT-C</p>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="flex items-center border rounded">
+        <button class="px-3 py-1 cursor-pointer" id="decrease">-</button>
+        <span class="px-4 border-l-1 py-1 border-r-1" id="display">01</span>
+        <button class="px-3 py-1 cursor-pointer" id="increase">+</button>
+      </div>
+      <button class=" text-white px-2 sm:px-6 py-2 rounded shadow bg-gradient-to-r from-[#1B7F75] to-[#4EA291] cursor-pointer" id="quote">
+        Request for quote
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="flex flex-col lg:flex-row pl-[5%] pr-[5%] justify-between gap-15 lg:gap-70 pb-[8%]">
+    <div class="flex flex-col gap-5">
+        <div class="flex gap-10">
+        <h5 class="text-[#271F19] font-poppins text-[20px] font-medium leading-[30px]">Description</h5>
+        <h5 class="text-[#271F19] font-poppins text-[20px] font-medium leading-[30px]">Reviews (1)</h5>
+        </div>
+        <hr class="">
+        <p class="pl-[3%] text-[#716B66] font-poppins text-[16px] font-normal leading-[24px]">Traditionally, the BWE has been studied in serial supply chains. That is also the setting of the famous beer game, where the typical demand pattern acrossthe supply chain looks like this: for a relatively small change in demand seen by the retailer, the demand variability progressively increases at the more upstream wholesaler, distributor, and factory (see the figure below). This leads to capacity shortages, stockouts, excess inventory, and increased operational costs. No wonder BWE has  a lot of attention among academics and practitioners alike.</p>
+        <h6 class="pl-[3%] text-[#716B66] font-poppins text-[16px] font-semibold leading-[24px]">Product Details:</h6>
+        <ul class="pl-[2%] flex flex-col gap-1 pl-[4%]">
+            <li class="text-[#716B66] font-poppins text-[16px] font-normal leading-[24px]">◦ Exclusively handmade</li>
+            <li class="text-[#716B66] font-poppins text-[16px] font-normal leading-[24px]">◦ Antique gold charms</li>
+            <li class="text-[#716B66] font-poppins text-[16px] font-normal leading-[24px]">◦ Semi precious round smooth gemstone</li>
+            <li class="text-[#716B66] font-poppins text-[16px] font-normal leading-[24px]">◦ 8mm beads</li>
+        </ul>
+    </div>
+    <aside class="flex flex-col gap-5">
+        <pre class="text-[#271F19] font-poppins text-[20px] font-medium leading-[30px]">Additional Information</pre>
+        <p class="flex flex-col text-[#716B66] font-poppins text-[16px] font-semibold leading-[24px]">DIMENTIONS<span class="font-normal">3x3x3</span></p>
+        <p class="flex flex-col text-[#716B66] font-poppins text-[16px] font-semibold leading-[24px]">Weight<span class="normal">0.5lbs</span></p>
+    </aside>
+</section>
+
+<section class="pl-[5%] pr-[5%] flex flex-col gap-5 bg-[#FAFAFA] pb-[8%]">
+    <h4 class="text-[#0F0F0F] font-poppins text-[24px]  not-italic font-normal leading-[120%]">Related Products</h4>
+  <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-1 flex">
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="  pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product1.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product2.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product3.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product4.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex w-full px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  <div class="flex flex-col bg-white border  border-black/10 p-5 gap-3 items-center">
+    <div   class="  pt-[6px] pb-[7px]">
+      <img src="/IMAGES/product1.png" alt="product1" class="w-[132px] h-[145px]">
+      </div>
+      <div class="flex flex-col gap-2">
+      <p class="text-[#0F0F0F] font-poppins text-[16px] not-italic font-medium leading-normal ">Vulval Toilet Cleaning Pack</p>
+      <div class="flex gap-1">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">4.7</span>
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/filled-star.png" alt="filled-star" class="w-[17px] h-[17px]">
+        <img src="/IMAGES/white-star.png" alt="white-star" class="w-[17px] h-[17px]">
+        <span class="text-[#7C7C7C] font-poppins text-[13px] not-italic font-normal leading-normal ">(23)</span>
+      </div>
+      <p class="text-[#0F0F0F] font-poppins text-[17px] not-italic font-normal leading-normal ">REF CHK-007</p>
+      <button class="flex px-[20px] py-[9px] justify-center items-center gap-1 rounded-lg bg-[linear-gradient(90deg,#1B7F75_0%,#4EA291_100%)] text-white font-poppins font-medium">View Details</button>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section class="ml-[5%] mr-[5%] h-[400px] bg-[url('/IMAGES/res-off.png')] sm:bg-[url('/IMAGES/off.png')] bg-cover bg-center flex justify-center md:block">
+  
+  <div class="ml-[5%] sm:justify-center  sm:max-w-[540px] text-white sm:text-left sm:float-right sm:relative sm:right-10 sm:mt-25">
+      <h3 class="text-[28px] sm:text-[36px] lg:text-[48px] leading-tight font-nohemi font-normal">
+        Enjoy up to 10% off!
+      </h3>
+      <p class="mt-3 text-[14px] sm:text-[15px] lg:text-[16px] leading-[22px] md:leading-[24px] font-nohemi w-[270px] sm:w-auto">
+        Grab your limited-time discount and enjoy 10% off on all our products
+      </p>
+
+      <button
+        class="mt-6 inline-flex items-center gap-2 bg-white text-[#479D8D] font-poppins font-medium px-6 h-[48px] rounded-[8px]"
+      >
+        <span>Get this from Jurhy</span>
+        <img src="/IMAGES/g-arrow.png" alt="arrow" class="h-5 w-5">
+      </button>
+  </div>
+
+</section>
+</main>
+
+<footer class="bg-[#FAFAFA]">
+  <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 pt-20 pb-15 justify-between pl-[5%] pr-[5%]">
+    <div class="flex flex-col gap-4">
+      <img src="/IMAGES/Surgical Packs.png" alt="Surgical Packs" class="w-[124px] h-[50px]">
+      <p class="sm:w-[407px] text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-[29px]">Safecare Prepared plates and broth tested  in accordance with CLSI M22 A3- Quality  assurance for Commercially Prepared  Microbiological Culture Media – second  edition.</p>
+      <div class="flex gap-2">
+         <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/fb2.png" alt="Facebook"></div>
+         <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/twitter2.png" alt="twitter"></div>
+        <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/insta2.png" alt="Instagram"></div>
+        <div class="w-[41px] h-[41px] rounded-full bg-[#F5F5F5] flex items-center justify-center"><img src="/IMAGES/Youtube2.png" alt="Youtube"></div>      
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <h2 class="text-[#1E1E1E] font-nohemi text-[20px] font-medium leading-normal not-italic">Quick Links</h2>
+      <a href="home.html" class="mt-3 text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Home</a>
+      <a href="about.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">About Us</a>
+      <a href="products.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Products</a>
+      <a href="contact.html" class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Contact Us</a>
+    </div>
+    <div class="flex flex-col gap-5">
+      <h2 class="text-[#1E1E1E] font-nohemi text-[20px] font-medium leading-normal not-italic">News Letter</h2>
+      <p class="text-[#716B66] font-poppins text-[16px] not-italic font-normal leading-normal">Over 750+ people have subscribed.</p>
+      <div class="flex gap-2">
+        <input type="text"  class="flex  w-[180px] sm:w-[280px] px-[22px] py-[14px] items-start gap-[10px] bg-white shadow-[0_0_4px_rgba(0,0,0,0.15)] " placeholder="Enter Your Email">
+        <button class="w-[100px] sm:w-[110px] h-[49px] flex-shrink-0 bg-gradient-to-r from-[#1B7F75] to-[#4EA291]">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <hr class="text-[#D4D4D4]">
+  <aside class="text-[#9F9F9F] font-poppins text-[14px] sm:text-[16px] not-italic font-normal leading-normal text-center pt-2 pb-2">Copyright 2024 Microbiano Ltd | All Rights Reserved</aside>  
+</footer>
+
+<script src="/JAVASCRIPT/INDEX.JS"></script>
+<script src="/JAVASCRIPT/products.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
